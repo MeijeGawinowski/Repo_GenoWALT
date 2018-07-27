@@ -1,0 +1,11 @@
+type,chrom,pos,val,name,dominance
+PH,3,96.1,0.7,qPh1,complete
+PH,3,118.3,0.7,qPh2,complete
+PH,6,17.2,-0.2,qPh3,partial
+PH,6,39.4,-0.2,qPh4,partial
+PH,9,23.6,-0.2,qPh5,recessive
+PH,9,195.2,-0.2,qPh6,recessive
+PH,12,132.0,-0.2,qPh7,complete
+PH,12,178.6,-0.2,qPh8,complete
+PH,15,65.2,-0.2,qPh9,partial
+PH,15,75.6,-0.2,qPh10,partial
