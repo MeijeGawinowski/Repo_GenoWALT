@@ -1,0 +1,10 @@
+type	chrom	pos	val	name
+PH	3	169.1	0.7	qPh1D
+PH	4	17.5	0.8	qPh2A1
+PH	4	55.6	1.0	qPh2A2
+PH	12	32.8	-0.1	qPh4D
+PH	13	132.3	1.1	qPh5A
+PH	14	101.9	5.5	qPh5B
+PH	16	94.8	3.4	qPh6A
+PH	21	56.1	-1.9	qPh7D
+

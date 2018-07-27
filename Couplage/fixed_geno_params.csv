@@ -1,0 +1,2 @@
+Dse_mean	Dse_sd	Phl	a_B_w	L_B_max	Phi_zen_B	d_I	d_P	L_P	d_S	d_E	L_E	Ln_final	Delta_prot	PAR_t	t_beg_reg	shp_I	N_I_el	inc_I	a_I_L	b_I_L	a_S_L	b_S_L	L_B_1	s_B_1	N_B_r	s_B_f	b_B_w	VAI	VBEE	SLDL	n0_sen	n1_sen	n2_sen	n3_sen	t0_sen	t1_sen	t2_sen	t3_sen	P_T	P_CT	GAI_c
+81	30	99	0.099	17.4	40	0.2	0.3	19.8	0.32	0.65	7.38	12.3	75	280000	6.8	squared	5	4.5	0.79	-0.29	0.6857	-2.16	7	0.5	1	0.92	-0.4	0.00906	0.012	1.34	4.91	3.3	4.35	0	468	691	959	1850	0.88	0	0.59
