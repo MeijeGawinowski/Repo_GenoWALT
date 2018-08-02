@@ -23,7 +23,7 @@
 
 import os
 
-os.chdir('/home/meije/Documents/GenoWALT/V8_PH')
+#os.chdir('/home/meije/Documents/GenoWALT/V7_PH')
 
 from Reader import *
 from WALTerReader import *
@@ -31,6 +31,7 @@ from Population import *
 from Simulation import *
 from Offspring import *
 from pheno_sim import *
+from simuPOP.utils import export, saveCSV
 
 
 # Import of QTL data

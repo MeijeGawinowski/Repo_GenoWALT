@@ -31,16 +31,16 @@ import os
 class Reader:
     
     def __init__(self):
-        self.fileQTL = "fileQTL4.csv" # file with genetic information of wheat
+        self.fileQTL = "fileQTL3.csv" # file with genetic information of wheat
         #self.choice = "file" # choice=file will take filteQTL to generate QTL data and choice="sampling" will generate loci and qtl randomly distributed in the genome
         #self.met = "normal" # if choice=sampling and if met="normal" qtl values are sampled in a normal distribution and if met="exponential" they are sampled in an exponential distribution
-        self.list_trt = ['Param_PlHeight','L_B_max','GAI_c']
+        self.list_trt = ['Param_PlHeight']
 
     
     def dataQTL(self):
         #if self.choice == "file":
         file = open(self.fileQTL,"rb")
-        df=pd.read_csv(file,delimiter=",",index_col=False)
+        df=pd.read_csv(file,delimiter='\t',index_col=False)
         file.close()
         #print("df",df)
         data = np.array(df)

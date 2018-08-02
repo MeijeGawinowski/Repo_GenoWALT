@@ -1,24 +1,23 @@
-type,chrom,pos,val,name,dominance
-Param_PlHeight,11,55.6,-5.0,qPh17,partial
-Param_PlHeight,11,108.05,-2.0,qPh18,partial
-Param_PlHeight,12,95.6,-5.7,qPh19,partial
-Param_PlHeight,6,17.5,0.1,qPh20,partial
-Param_PlHeight,5,100.3,-3.6,qPh21,partial
-Param_PlHeight,6,55.6,-1.5,qPh22,partial
-Param_PlHeight,4,17.5,0.8,qPh2,partial
-Param_PlHeight,4,55.6,1.0,qPh3,partial
-Param_PlHeight,13,132.3,1.1,qPh5,partial
-Param_PlHeight,16,94.8,3.4,qPh7,partial
-Param_PlHeight,14,101.9,5.5,qPh6,partial
-Param_PlHeight,3,169.1,0.7,qPh1,partial
-Param_PlHeight,12,32.8,-0.1,qPh4,partial
-Param_PlHeight,21,56.1,-1.9,qPh8,partial
-Param_PlHeight,3,186.55,-0.6,qPh9,partial
-Param_PlHeight,5,47.05,0.9,qPh10,partial
-Param_PlHeight,7,141.6,1.0,qPh11,partial
-Param_PlHeight,9,93.25,1.2,qPh12,partial
-Param_PlHeight,11,39.75,-2.8,qPh13,partial
-Param_PlHeight,13,67.2,-1.2,qPh14,partial
-Param_PlHeight,13,156.3,-0.7,qPh15,partial
-Param_PlHeight,17,108.05,-2.0,qPh16,partial
-
+type	chrom	pos	val	name	dominance
+Param_PlHeight	11	55.6	-5.0	qPh17	partial
+Param_PlHeight	11	108.05	-2.0	qPh18	partial
+Param_PlHeight	12	95.6	-5.7	qPh19	partial
+Param_PlHeight	6	17.5	0.1	qPh20	partial
+Param_PlHeight	5	100.3	-3.6	qPh21	partial
+Param_PlHeight	6	55.6	-1.5	qPh22	partial
+Param_PlHeight	4	17.5	0.8	qPh2	partial
+Param_PlHeight	4	55.6	1.0	qPh3	partial
+Param_PlHeight	13	132.3	1.1	qPh5	partial
+Param_PlHeight	16	94.8	3.4	qPh7	partial
+Param_PlHeight	14	101.9	5.5	qPh6	partial
+Param_PlHeight	3	169.1	0.7	qPh1	partial
+Param_PlHeight	12	32.8	-0.1	qPh4	partial
+Param_PlHeight	21	56.1	-1.9	qPh8	partial
+Param_PlHeight	3	186.55	-0.6	qPh9	partial
+Param_PlHeight	5	47.05	0.9	qPh10	partial
+Param_PlHeight	7	141.6	1.0	qPh11	partial
+Param_PlHeight	9	93.25	1.2	qPh12	partial
+Param_PlHeight	11	39.75	-2.8	qPh13	partial
+Param_PlHeight	13	67.2	-1.2	qPh14	partial
+Param_PlHeight	13	156.3	-0.7	qPh15	partial
+Param_PlHeight	17	108.05	-2.0	qPh16	partial

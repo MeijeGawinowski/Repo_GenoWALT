@@ -46,6 +46,7 @@ class Population():
         pop = sim.Population(size=N_ind, loci=[0]*self.nchrom, ploidy=self.ploidy,infoFields=header)
         pop.addLoci(chrom=list_chrom, pos=list_pos, lociNames=list_names)
         
+        
         # Information fields initialization
         self.InfoPop(pop,header,datPop)
         

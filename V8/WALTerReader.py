@@ -40,7 +40,6 @@ class WALTerReader():
         file.close()
         header = list(df)[3:np.shape(df)[1]]
         walter=np.array(df)
-        print("header=",header)
         
         file = open(self.geno_names,"rb")
         df=pd.read_csv(file,delimiter="\t",index_col=False,header=None)
@@ -94,35 +93,6 @@ class WALTerReader():
                 subdict["[1,1]"].append(val_qtl)
             tab[qtl] = subdict
         return(tab)
-        
-    
-    # def getGenoPop(self,data):
-    # # data is the QTL table
-    #     pheno = self.readFilePheno()
-    #     N_qtl = np.shape(data)[0]
-    #     N_ind = pheno[2]
-    #     print("CHECK",N_qtl)
-    #     try :
-    #         file = open(self.fileGeno,"rb")
-    #         listGeno = eval(file.read())
-    #         file.close()
-    #         if len(list(listGeno.values())[0]) != N_qtl:
-    #             print("Warning : incorrect file, genotype randomly generated (wrong number of qtls)")
-    #             listGeno = {}
-    #             for ind in range(N_ind):
-    #                 subdict = {}
-    #                 for qtl in range(N_qtl):
-    #                     subdict[qtl] = [rd.choice([0,1]),rd.choice([0,1])]
-    #                 listGeno[ind] = subdict
-    #     except FileNotFoundError :
-    #         listGeno = {}
-    #         for ind in range(N_ind):
-    #             subdict = {}
-    #             for qtl in range(N_qtl):
-    #                 subdict[qtl] = [rd.choice([0,1]),rd.choice([0,1])]
-    #             listGeno[ind] = subdict
-    #         print("Warning :incorrect file, genotype randomly generated (wrong file or path name)")
-    #     return(listGeno)
     
     def getAllelTab(self,listGeno):
     # listGeno is the dictionary list of the population genotype

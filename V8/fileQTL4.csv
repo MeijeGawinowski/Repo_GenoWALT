@@ -1,9 +1,9 @@
-type,chrom,pos,val,name,dominance
-Param_PlHeight,11,55.6,8.0,qPh17,partial
-Param_PlHeight,11,108.05,7.0,qPh18,partial
-Param_PlHeight,12,95.6,6.0,qPh19,partial
-Param_PlHeight,6,17.5,5.0,qPh20,partial
-L_B_max,12,95.6,4.0,qPh19,partial
-L_B_max,3,169.1,3.0,qPh1,partial
-GAI_c,6,17.5,2.0,qPh20,partial
-GAI_c,13,156.3,1.0,qPh15,partial
+type	chrom	pos	val	name	dominance
+Param_PlHeight	11	55.6	8.0	qPh17	partial
+Param_PlHeight	11	108.05	7.0	qPh18	partial
+Param_PlHeight	12	95.6	6.0	qPh19	partial
+Param_PlHeight	6	17.5	5.0	qPh20	partial
+L_B_max	12	95.6	4.0	qPh19	partial
+L_B_max	3	169.1	3.0	qPh1	partial
+GAI_c	6	17.5	2.0	qPh20	partial
+GAI_c	13	156.3	1.0	qPh15	partial

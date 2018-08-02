@@ -206,7 +206,7 @@ def getListQTL(dico_geno,conv):
         allel = dico_geno[idx] # allel value for the individual i at the qtl j       
         al1=str(allel).replace(" ","")
         al2="["+str(allel[1])+","+str(allel[4])+"]"
-        # conv[j] est liste allèles/valeurs pour le qtl j
+        # conv[j] est liste alleles/valeurs pour le qtl j
         list_allel = list(conv[j].keys()) # alleles list for qtl j
         list_valqtl = list(conv[j].values()) # qtl j values list for each allele
         try :
@@ -225,7 +225,7 @@ def offspringQTL(dictGeno,conv):
         allel = dictGeno[idx] # allel value for the individual i at the qtl
         al1=str(allel).replace(" ","")       
         al2="["+str(allel[1])+","+str(allel[4])+"]"
-            # conv[j] est liste allèles/valeurs pour le qtl j
+            # conv[j] est liste alleles/valeurs pour le qtl j
         list_allel = list(conv[j].keys()) # alleles list for qtl j
         list_valqtl = list(conv[j].values()) # qtl j values list for each allele
         try :

@@ -88,7 +88,7 @@ class Simulation():
             
         for i in range(N_ind):
             # for the individual i
-            #print("Progeny of individual N°",i)
+            #print("Progeny of individual Number ",i)
             scheme=list(np.random.choice([0,1],size=dynN_des[i], replace=True,p=[self.selfing,1-self.selfing]))
             #print(scheme)
             N_auto=scheme.count(0)

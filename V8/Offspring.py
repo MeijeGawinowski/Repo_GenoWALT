@@ -82,7 +82,7 @@ class Offspring():
             allel = dictGeno[idx] # allel value for the individual i at the qtl
             al1=str(allel).replace(" ","")       
             al2="["+str(allel[1])+","+str(allel[4])+"]"
-            # conv[j] est liste allèles/valeurs pour le qtl j
+            # conv[j] est liste alleles/valeurs pour le qtl j
             list_allel = list(conv[j].keys()) # alleles list for qtl j
             list_valqtl = list(conv[j].values()) # qtl j values list for each allele
             try :
@@ -237,13 +237,6 @@ class Offspring():
                         final_data[i,1]=new_dict[geno_name][trt_name]
                 i=i+1
 
-        
-        #print("ind=",ind,len(ind))
-        #print("final geno=",final_geno,len(final_geno))
-        #print("final fitness=", final_fitness,len(final_fitness))
-        
-        #final_data = np.column_stack([ind,list_final_geno,np.array(final_fitness).astype(np.object)]) 
-        
         print("final data is : ",final_data)
        
         # Writing of a scheme file in a csv
