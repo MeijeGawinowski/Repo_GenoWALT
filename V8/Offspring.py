@@ -39,9 +39,9 @@ class Offspring():
     def __init__(self,trt_interest,qtl_limits):
         self.trt_interest = trt_interest
         self.qtl_limits=qtl_limits
-        self.pheno_limits = {'Param_PlHeight':[50,170],'L_B_max':[5,35],'GAI_c':[0,40]}
-        self.trt_mean = {'Param_PlHeight': 76.1}
-        self.choice_pheno = "rescaling" # "addition" or "rescaling"
+        self.pheno_limits = {'Param_PlHeight':[50,170]}
+        #self.trt_mean = {'Param_PlHeight': 76.1}
+        #self.choice_pheno = "rescaling" # "addition" or "rescaling"
 
 
     def offspringGeno(self,offpop,conv,tab_qtl):
@@ -116,16 +116,16 @@ class Offspring():
         
     
     def offspringPheno(self,list_qtl,trt):
-        if self.choice_pheno == "addition" :
-            val_trt = self.trt_mean[trt] + sum(list_qtl)
-        if self.choice_pheno == "rescaling":
-            val_trt = sum(list_qtl)
-            val_trt = self.rescaling(val_trt,self.qtl_limits[trt],self.pheno_limits[trt])
+        #if self.choice_pheno == "addition" :
+            #val_trt = self.trt_mean[trt] + sum(list_qtl)
+        #if self.choice_pheno == "rescaling":
+        val_trt = sum(list_qtl)
+        val_trt = self.rescaling(val_trt,self.qtl_limits[trt],self.pheno_limits[trt])
         return(val_trt)
         
         
                 
-    def GenoWALT2WALTer(self,offpop,tab_qtl,conv):
+    def GenoWALT2WALTer(self,offpop,tab_qtl,conv, write_data = True):
         genotab=self.offspringGeno(offpop,conv,tab_qtl)
         res=self.dictGenoOffspring(genotab)
         N_ind=len(res)
@@ -180,7 +180,7 @@ class Offspring():
             final_geno[g,1]=new_dict[key]['dico']
 
         # Calculer les phenotypes
-        
+    
         for trt in self.trt_interest:
             print("current trait is ",trt)
             trt_idx=self.trt_interest.index(trt)
@@ -207,7 +207,7 @@ class Offspring():
         print("Now new dict is : ",new_dict)
         
         
-        
+      
         N_ind=sum(int_prop)
         print("Nb of individuals is ",N_ind)
         final_data=np.empty((N_ind+1,N_trait+3),dtype=object)
@@ -240,11 +240,12 @@ class Offspring():
         print("final data is : ",final_data)
        
         # Writing of a scheme file in a csv
-        #data_file = open("population_data.csv","w")
-        #data_writer = csv.writer(data_file,delimiter="\t")
-        #data_writer.writerow(['individual','fitness','genotype'])
-        #data_writer.writerows(final_data)
-        #data_file.close()
+		if write_data == True :
+        	data_file = open("population_data.csv","w")
+        	data_writer = csv.writer(data_file,delimiter="\t")
+        	#data_writer.writerow(['individual','fitness','genotype'])
+        	data_writer.writerows(final_data)
+        	data_file.close()
         
         # Writing new table of genotype names
         geno_file = open("geno_conversion.csv","w")

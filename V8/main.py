@@ -36,6 +36,7 @@ from simuPOP.utils import export, saveCSV
 
 # Import of QTL data
 qtl_object = Reader()
+list_trt = Reader.list_trt
 qtl_data = qtl_object.dataQTL()
 tab_qtl = qtl_data[0] # array with the genetic positions of QTLs
 dict_qtl = qtl_data[1] # dictionary list of the QTLs
@@ -63,17 +64,15 @@ for g in range(N_gen):
     print("Parent population genotype : ", genoPop)
     conv = data_walter[1] # conversion table between alleles and QTL values
     print("Conversion table QTL/allel : ", conv)
-    qtl_tab = data_walter[2]
-    print("Table des QTL : ",qtl_tab)
-    header_list=data_walter[3]
+    header_list=data_walter[2]
     print("Header : ",header_list)
-    fitness_list=data_walter[4]
+    fitness_list=data_walter[3]
     print("Fitness : ",fitness_list)
-    walter_array=data_walter[5]
+    walter_array=data_walter[4]
     print("Data WALTer : ",walter_array)
 
     # Creation of the parent population
-    parpop_object = Population()
+    parpop_object = Population(list_trt)
     parpop = parpop_object.Creation(tab_qtl,genoPop,fitness_list,header_list,walter_array)
     #print("pop n",0," is :")
     #sim.dump(parpop)
@@ -89,8 +88,11 @@ for g in range(N_gen):
     print("pheno_data is ",pheno_data)
     
     if par_WALTer == True:
+        pheno_data = off_object.GenoWALT2WALTer(offpop,tab_qtl,conv,write_data=False)
         pheno2sim_scheme(pheno_data,qtl_object.list_trt)
 
+    else :
+        pheno_data = off_object.GenoWALT2WALTer(offpop,tab_qtl,conv,write_data=True)
 
 
 

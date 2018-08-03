@@ -103,7 +103,7 @@ class WALTerReader():
             tab_out[i,:] = list(listGeno[i].values())
         return(tab_out)
     
-    def getQTLtab(self,popGeno,data):
+    """def getQTLtab(self,popGeno,data):
         #popGeno is the population genotype dictionnary
         N_ind = len(popGeno)
         conv = self.setConversion(data)
@@ -126,7 +126,7 @@ class WALTerReader():
                 val = list_valqtl[idx] # qtl value matching this allele
                 qtl_val.append(val)
             tab_out[i,:] = qtl_val
-        return(tab_out)
+        return(tab_out)"""
     
     def dataWALTer(self,data):
         dict_genoPop = self.WALTer2GenoWALT()[0]
@@ -136,6 +136,6 @@ class WALTerReader():
         genoPop = self.getAllelTab(dict_genoPop)
         conv = self.setConversion(data)
         # pheno = self.readFilePheno()
-        tab = self.getQTLtab(genoPop,data)
-        return([genoPop,conv,tab,header,fitness,walter])
+        #tab = self.getQTLtab(genoPop,data)
+        return([genoPop,conv,header,fitness,walter])
 

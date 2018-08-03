@@ -29,10 +29,10 @@ import numpy as np
 
 class Population():
 
-    def __init__(self):
+    def __init__(self,list_trt):
         self.nchrom = 21
         self.ploidy = 2
-        self.trt_interest = ['Param_PlHeight','L_B_max','GAI_c']
+        self.trt_interest = list_trt
         
 
     def Creation(self,tab_qtl,genoPop,fitness_list,header,datPop):
@@ -84,9 +84,9 @@ class Population():
             pop.setIndInfo(val,trt)
         return(pop)
         
-    def calcfitness(self,fitness_field):
+   """ def calcfitness(self,fitness_field):
         # for now the fitness field is used raw for fitness computation
-        return(fitness_field)
+        return(fitness_field)"""
 
     
 
